@@ -149,7 +149,7 @@ class ViewController: UIViewController {
             }.disposed(by: disposeBag)
     }
     
-//    由于 Variable 在之后版本中将被废弃，建议使用 Varible 的地方都改用下面介绍的 BehaviorRelay 作为替代。
+//    由于 Variable 在之后版本中将被废弃，建议使用 Variable 的地方都改用下面介绍的 BehaviorRelay 作为替代。
 //    Variable 其实就是对 BehaviorSubject 的封装，所以它也必须要通过一个默认的初始值进行创建。
 //    Variable 具有 BehaviorSubject 的功能，能够向它的订阅者发出上一个 event 以及之后新创建的 event。
 //    不同的是，Variable 还把会把当前发出的值保存为自己的状态。同时它会在销毁时自动发送 .complete 的 event，不需要也不能手动给 Variables 发送 completed 或者 error 事件来结束它。
