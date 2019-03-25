@@ -14,8 +14,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var button: UIButton!
-    
-    //负责对象销毁
+
+    // 负责对象销毁
     let disposeBag = DisposeBag()
     let observable = Observable<Int>.interval(1, scheduler: MainScheduler.instance)
     override func viewDidLoad() {
@@ -24,6 +24,7 @@ class ViewController: UIViewController {
 //        way2()
 //        way3()
         way4()
+        
 //        buttonSelected()
 //        customBind()
         button.rx.tap
@@ -77,11 +78,11 @@ class ViewController: UIViewController {
     
     // 自定义可绑定属性
     func customBind() {
-        //Observable序列（每隔0.5秒钟发出一个索引数）
+        // Observable序列（每隔0.5秒钟发出一个索引数）
         let observable = Observable<Int>.interval(0.5, scheduler: MainScheduler.instance)
         observable
             .map { CGFloat($0) }
-            .bind(to: label.rx.fontSize) //根据索引数不断变放大字体
+            .bind(to: label.rx.fontSize) // 根据索引数不断变放大字体
             .disposed(by: disposeBag)
     }
 }
