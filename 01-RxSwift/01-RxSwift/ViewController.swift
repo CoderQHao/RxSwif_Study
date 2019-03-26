@@ -39,6 +39,17 @@ class ViewController: UIViewController {
             print("你选中的歌曲信息【\(music)】")
         }).disposed(by: disposeBag)
         
+        Observable.zip(tableView.rx.itemSelected, tableView.rx.modelSelected(Music.self))
+            .bind { indexPath, music in
+                print("选中项的indexPath为：\(indexPath)")
+                print("你选中的歌曲信息【\(music)】")
+            }
+            .disposed(by: disposeBag)
+        
+        tableView.rx.modelDeleted(Music.self).subscribe(onNext: { music in
+            print("你删除的歌曲信息【\(music)】")
+        }).disposed(by: disposeBag)
+        
     }
 
 

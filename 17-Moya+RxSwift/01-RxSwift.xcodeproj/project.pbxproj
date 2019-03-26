@@ -15,6 +15,7 @@
 		0768962921C201B100D0DEA3 /* DouBanAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0768962821C201B100D0DEA3 /* DouBanAPI.swift */; };
 		0768963C21C206E000D0DEA3 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0768963B21C206E000D0DEA3 /* RxSwift.framework */; };
 		0768963E21C206F300D0DEA3 /* RxAtomic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0768963D21C206F300D0DEA3 /* RxAtomic.framework */; };
+		07DBC0C92249F5E00059503C /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DBC0C82249F5E00059503C /* Network.swift */; };
 		D26AEA70814FD0936A3834EC /* Pods_01_RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 570DF46B7F44784A722D06E8 /* Pods_01_RxSwift.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		0768962821C201B100D0DEA3 /* DouBanAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DouBanAPI.swift; sourceTree = "<group>"; };
 		0768963B21C206E000D0DEA3 /* RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0768963D21C206F300D0DEA3 /* RxAtomic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxAtomic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		07DBC0C82249F5E00059503C /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		570DF46B7F44784A722D06E8 /* Pods_01_RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_01_RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA03C5AE5778B2B15738A3B0 /* Pods-01-RxSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-01-RxSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-01-RxSwift/Pods-01-RxSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		E82B5F96471C5260D06633EE /* Pods-01-RxSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-01-RxSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-01-RxSwift/Pods-01-RxSwift.release.xcconfig"; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				0705421A21AE42AF009BCE5A /* AppDelegate.swift */,
 				0705421C21AE42AF009BCE5A /* ViewController.swift */,
 				0768962821C201B100D0DEA3 /* DouBanAPI.swift */,
+				07DBC0C82249F5E00059503C /* Network.swift */,
 				0705421E21AE42AF009BCE5A /* Main.storyboard */,
 				0705422121AE42B1009BCE5A /* Assets.xcassets */,
 				0705422321AE42B1009BCE5A /* LaunchScreen.storyboard */,
@@ -233,6 +236,7 @@
 			files = (
 				0705421D21AE42AF009BCE5A /* ViewController.swift in Sources */,
 				0768962921C201B100D0DEA3 /* DouBanAPI.swift in Sources */,
+				07DBC0C92249F5E00059503C /* Network.swift in Sources */,
 				0705421B21AE42AF009BCE5A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
